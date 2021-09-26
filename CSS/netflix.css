@@ -1,0 +1,145 @@
+/*Aplicando Mobile First*/
+*{
+    margin: 0;
+    pad: 0;
+}
+body{
+    background: #e64d4d;
+    font: 12px "Verdana", Helvetica, sans-serif;
+}
+/*Formatando o logo*/
+.imagem-logo{
+    text-align: center;
+}
+
+img.logo{
+    width: 50%;
+    height: 50%;
+}
+/*Formatação header*/
+header{
+    background: white;
+    padding: 10px;
+}
+/*Formatando o menu*/
+nav{
+    margin: 0 auto;
+    width: 90%;
+}
+nav ul{
+    list-style: none;
+}
+nav#menu-principal a:link{
+    background: black;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+}
+a:link, a:active, a:visited{
+    color: #e64d4d;
+    line-height: 50px;
+    text-decoration: none;
+}
+nav#menu-principal a:hover{
+    background: white;
+    text-align: center;
+}
+/*Formatação conteúdo*/
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    color:black;
+}
+h1{
+    font-weight: bold;
+    font-size: large; 
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border-bottom: 1px none black ; 
+}
+
+article{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    text-align: justify;  
+}
+/* parte esquerda*/
+h2{
+    font-weight: bold;
+    font-size: medium; 
+    text-align: center;
+    letter-spacing: 5px;
+    border-bottom: 1px none black ;
+    margin: bottom 20px; ;   
+}
+.parte1{
+   width:0 auto;
+   border-bottom: 1px black;
+   width: 70%;
+   text-align: justify; 
+}
+.imagem-esquerda{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.imagem-esquerda img{
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.parte2{
+    width:0 auto;
+    border-bottom: 1px black;
+    width: 70%;
+    text-align: justify; 
+ }
+ .imagem-direita{
+     margin: 0;
+     padding: 0;
+     text-align: center;
+ }
+ .imagem-direita img{
+     width: 100%;
+     margin-bottom: 20px;
+     margin-top: 20px;
+ }
+/*footer*/
+footer{
+    background: white;
+    border-top: 2px solid gray;
+    margin-top: 50px;
+    color: black;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Media queries*/
+@media (min-width: 992px){
+ 
+    /* Header*/
+
+    .imagem-logo{
+        text-align: center;
+    }
+    img.logo{
+        width: 20%;
+    }
+
+    nav#menu-principal a:link{
+        float: left;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main{
+        clear: both;
+    }
+    
+}

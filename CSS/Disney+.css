@@ -1,0 +1,220 @@
+/*Aplicando Mobile First*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #d9a0f3;
+    font: 12px "Verdana", Helvetica, sans-serif;
+
+}
+/* Formatando Logo */
+.imagem-logo{
+ text-align: center;   
+}
+
+img.logo{
+    width: 50%;
+    height: 50%;
+}
+/* Formatação Header*/
+header{
+    background:white;
+    padding: 10px;
+}
+
+/* Formatação Menu-principal*/
+nav{
+    margin: 0 auto;
+    width: 90%;
+}
+nav ul{
+    list-style: none;
+}
+
+nav#menu-principal a:link{
+    background: black;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin-bottom: 30px;
+    border-radius: 30px;
+    text-align: center;
+    display: block;
+    text-transform: uppercase;
+    
+}
+
+a:link, a:active,a:visited{
+    color: #d9a0f3;
+    line-height: 50px;
+    text-decoration: none;
+
+}
+
+nav#menu-principal a:hover{
+    background: white;
+    text-align: center;
+}
+/*Formação conteudo principal*/
+main{
+    margin-left: 20px;
+    margin-right: 20px;
+    color: black;
+}
+h1{
+   font-weight: bold;
+   font-size: medium; 
+   text-align: center;
+   text-transform: uppercase;
+   letter-spacing: 5px;
+   border-bottom: 1px none black ;
+
+}
+article{
+    margin:0 auto;
+    margin-bottom: 30px;
+    text-align: center;
+    text-align: justify;
+    border-bottom: 1px none black;
+}
+.principal{
+    
+    text-align: justify;
+    text-indent: 3em;
+}
+.pflutuante{
+    width: 300px;
+    height: 400px;
+    margin-left: 10px;
+    float: left;
+    background:white;
+    margin-bottom: 30px;
+    margin-top: 10px ;
+    text-align: center;
+}
+
+h3{
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+.parte1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.parte1 img{
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    text-align: center;
+   
+}
+.parte2{
+    margin: 0;
+    text-align: center;
+    
+}
+.parte2 img{
+    width: 100%;
+    margin-bottom: 40px;
+    border: 1px solid black;
+    text-align: center; 
+    margin-left: 10px;
+}
+ul{
+    list-style: none;
+}
+
+.menu{
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    text-align: justify;
+    font-weight: bold;
+    word-spacing: 5px;
+}
+
+/* Rodapé*/
+footer{
+    background: white;
+    border-top: 2px solid gray;
+    margin-top: 50px;
+    color:black;
+    text-align: center;
+    padding: 5px;
+}
+
+/*Media queries*/
+
+@media( min-width: 768px) and (max-width: 991px) {
+    /* Header*/
+
+    .imagem-logo{
+        text-align: center;
+    }
+    img.logo{
+        width: 20%;
+    }
+
+    nav#menu-principal a:link{
+        float: left;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* principal*/
+    main{
+        clear: both;
+    }
+    .principal{
+       width: 60%; 
+       float: left;
+    }
+    
+    .menu{
+       clear: both;
+       text-align: center;
+    }
+    footer{
+        clear:both;
+    }
+    
+    
+    
+}
+    @media(min-width: 992px){
+    .imagem-logo{
+        text-align: center;
+    }
+    img.logo{
+        width: 20%;
+    }
+    nav#menu-principal a:link{
+        float: left;
+        border-radius: 0;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    main{
+        clear: both;
+    }
+    .principal{
+        width: 70%; 
+        float: left;
+        margin-left: 20px;
+     }
+     
+     .menu{
+        width: 20%;
+        float: left;
+        margin-left: 50px;
+     }
+
+    footer{
+        clear: both;
+    }
+
+      
+}
